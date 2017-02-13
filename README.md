@@ -1,5 +1,8 @@
 jekyll-starter
 ==============
+Based off of https://github.com/cnunciato/jekyll-starter
+and
+https://github.com/scotch-io/scotch-io.github.io
 
 A super-simple starter kit for a bare-bones Jekyll instance.  To use, just install Jekyll  (if you haven't already):
 

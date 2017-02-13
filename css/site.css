@@ -1,4 +1,9 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+
 body {
 	font-family: Helvetica;
-	font-size: 75%;
+	color: #000216;
 }
