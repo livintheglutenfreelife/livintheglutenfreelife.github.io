@@ -1,0 +1,34 @@
+---
+permalink: "/search/"
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/site.css">
+        <script src="/js/site.js"></script>
+        <title>Search</title>
+    </head>
+    <body>
+        <header>
+                {% include header.html %}
+        </header>
+
+        <script>
+            (function() {
+                var cx = '002838642428268535694:9khtcxvuedo';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:search></gcse:search>
+
+        <footer>
+                {% include footer.html %}
+        </footer>
+    </body>
+</html>

@@ -1,5 +1,6 @@
 <nav class="pagination-wrap">
     <ul class="pagination">
+        <li>More posts</li>
         {% if paginator.previous_page %}
         <li>
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">

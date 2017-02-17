@@ -1,0 +1,17 @@
+.tile{
+    border-top-style: solid;
+    border-width: 3px;
+    border-color: 000216; 
+    padding-bottom: 50px;
+    border-color: #5CB2CE;
+}
+
+.preview-image preview-video{
+    width: 400px;
+}
+
+@media screen and (min-width:680px) {
+    .tile{
+        margin-left: 20%;
+   }
+}
