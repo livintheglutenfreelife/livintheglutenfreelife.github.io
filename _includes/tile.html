@@ -1,5 +1,7 @@
+<script src="/js/tile.js"></script>
+
 <div class="tile">
-        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <aside>
             {{ post.date | date: "%B %-d, %Y" }}
             {% if post.categories != empty %}
@@ -13,11 +15,11 @@
     {% if post.featured_image or post.featured_video_id %}
     <div class="preview-area">
         {% if post.featured_image %}
-        <img class="preview-image" src='{{ post.featured_image }}' width=300></img>
+        <img class="preview-image" src='{{ post.featured_image }}' style="margin-left:12.5%;"></img>
         {% endif %}
 
         {% if post.featured_video_id %}
-        <iframe class="preview-video" src="https://www.youtube.com/embed/{{ post.featured_video_id }}" frameborder="0" allowfullscreen></iframe>
+        <iframe class="preview-video" src="https://www.youtube.com/embed/{{ post.featured_video_id }}" frameborder="0" allowfullscreen style="margin-left: 12.5%;"></iframe>
         {% endif %}
     </div>
     {% endif %}

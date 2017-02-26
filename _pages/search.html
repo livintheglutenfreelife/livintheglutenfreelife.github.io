@@ -6,6 +6,9 @@ permalink: "/search/"
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/css/site.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/search.js"></script>
         <script src="/js/site.js"></script>
         <title>Search</title>
     </head>
@@ -14,18 +17,17 @@ permalink: "/search/"
                 {% include header.html %}
         </header>
 
+        <div class="searchForm">
+            <form id="searchForm">
+                <input type="text" placeholder="Search" id="searchField" />
+                <input type="submit" value="Search!" id="searchButton" />
+            </form>
+        </div>
+        <ul id="searchResults"></ul>
+
         <script>
-            (function() {
-                var cx = '002838642428268535694:9khtcxvuedo';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-            })();
+            loadSearch();
         </script>
-        <gcse:search></gcse:search>
 
         <footer>
                 {% include footer.html %}

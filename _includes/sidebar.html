@@ -1,10 +1,27 @@
 <div class="sidebar">
     <ul>
         <li>
-            <span>Hello!</span>
+            <span>Follow us on Facebook!</span>
         </li>
         <li>
-            <span>Goodbye!</span>
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flivintheglutenfreelife&width=300&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" style="border:none; overflow:hidden; width:300px; height:430px; background: white; float:left; " allowtransparency="true" frameborder="0"></iframe>
+        </li>
+        <li><p></p></li>
+        <li>
+            <span>Find us on Instagram!</span>
+        </li>
+        <li>
+            <div id="instafeed"></div>
+            <script type="text/javascript">
+                var feed = new Instafeed({
+                    get: 'user',
+                    userId: '4716917764',
+                    sortBy: 'most-recent',
+                    clientId: 'a19c8ee0042645ba82196c3d1cf7c199',
+                    accessToken: '4716917764.a19c8ee.c0e9fef4fe6543279b11bd723a444205'
+                });
+                feed.run();
+            </script>
         </li>
     </ul>
 </div>

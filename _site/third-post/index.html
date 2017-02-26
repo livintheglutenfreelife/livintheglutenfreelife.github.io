@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/site.css">
+	<script src="/js/site.js"></script>
+	<title>My Blog</title>
+</head>
+<body>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1725337847757626";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<header>
+		<link rel="stylesheet" href="/css/header.css">
+<script type="text/javascript" src="/js/instafeed.min.js"></script>
+<script src="/js/header.js"></script>
+<a href="/"><img class="header-image" src="/images/lgfl_header_full_text.svg"></img></a>
+<ul class="topnav" id="myTopnav">
+  <li><a href="/">Home</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/search">&#128269;</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+	</header>
+	<div class="container">
+		<article>
+			<h1><a class="post-title" href="/third-post/">Test Post</a></h1>
+			<p>25 Feb 2017</p>
+			<p><p>This is a test post</p>
+</p>
+		</article>
+		<br><br>
+		<div class="fb-comments" data-href="http://localhost:4000/third-post/" data-width="50%" data-numposts="5"></div>
+	</div>
+	<div class="sidebar">
+    <ul>
+        <li>
+            <span>Follow us on Facebook!</span>
+        </li>
+        <li>
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flivintheglutenfreelife&width=300&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" style="border:none; overflow:hidden; width:300px; height:430px; background: white; float:left; " allowtransparency="true" frameborder="0"></iframe>
+        </li>
+        <li><p></p></li>
+        <li>
+            <span>Find us on Instagram!</span>
+        </li>
+        <li>
+            <div id="instafeed"></div>
+            <script type="text/javascript">
+                var feed = new Instafeed({
+                    get: 'user',
+                    userId: '4716917764',
+                    sortBy: 'most-recent',
+                    clientId: 'a19c8ee0042645ba82196c3d1cf7c199',
+                    accessToken: '4716917764.a19c8ee.c0e9fef4fe6543279b11bd723a444205'
+                });
+                feed.run();
+            </script>
+        </li>
+    </ul>
+</div>
+	<footer>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92194621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</footer>
+</body>
+</html>
