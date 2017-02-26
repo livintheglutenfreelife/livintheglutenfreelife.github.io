@@ -66,6 +66,12 @@ body {
 		width: 34%;
 		float: left;
 	}
+	article{
+		margin-left: 20%;
+	}
+	.fb-comments{
+		margin-left: 20%;
+	}
 }
 
 .pagination{
