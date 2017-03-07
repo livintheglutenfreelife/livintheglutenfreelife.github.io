@@ -2,6 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="/css/site.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/js/getPageView.js"></script>
 	<script src="/js/site.js"></script>
 	<title>My Blog</title>
 </head>
@@ -36,13 +38,16 @@
 	</header>
 	<div class="container">
 		<article>
-			<h1><a class="post-title" href="/third-post/">Test Post</a></h1>
+			<h1><a class="post-title" href="/fourth-post/">Test Post</a></h1>
 			<p>25 Feb 2017</p>
+			<p id=viewCount></p>
 			<p><p>This is a test post</p>
 </p>
 		</article>
 		<br><br>
-		<div class="fb-comments" data-href="https://livintheglutenfreelife.github.io/third-post/" data-width="50%" data-numposts="5"></div>
+		<div class="fb-comments" data-href="https://livintheglutenfreelife.github.io/fourth-post/" data-width="50%" data-numposts="5">
+		</div>
+		<script>loadViews("/fourth-post/");</script>
 	</div>
 	<div class="sidebar">
     <ul>

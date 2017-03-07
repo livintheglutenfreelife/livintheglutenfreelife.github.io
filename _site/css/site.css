@@ -72,6 +72,12 @@ body {
 	.fb-comments{
 		margin-left: 20%;
 	}
+	#searchResults{
+		margin-left: 20%;
+	}
+	.searchForm{
+		margin-left: 20%;
+	}
 }
 
 .pagination{

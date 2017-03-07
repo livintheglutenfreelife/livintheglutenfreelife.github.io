@@ -1,8 +1,8 @@
 {
   
-    "third-post": {
+    "fourth-post": {
       "title": "Test Post",
-      "url": "/third-post/",
+      "url": "/fourth-post/",
       "summary": "This is a test post",
       "content": "This is a test post"
     }

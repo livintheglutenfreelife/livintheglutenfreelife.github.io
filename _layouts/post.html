@@ -5,6 +5,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="/css/site.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/js/getPageView.js"></script>
 	<script src="/js/site.js"></script>
 	<title>My Blog</title>
 </head>
@@ -27,10 +29,13 @@
 		<article>
 			<h1><a class="post-title" href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a></h1>
 			<p>{{ page.date | date_to_string }}</p>
+			<p id=viewCount></p>
 			<p>{{ content }}</p>
 		</article>
 		<br><br>
-		<div class="fb-comments" data-href="https://livintheglutenfreelife.github.io{{ page.url }}" data-width="50%" data-numposts="5"></div>
+		<div class="fb-comments" data-href="https://livintheglutenfreelife.github.io{{ page.url }}" data-width="50%" data-numposts="5">
+		</div>
+		<script>loadViews("{{ page.url }}");</script>
 	</div>
 	{% include sidebar.html %}
 	<footer>

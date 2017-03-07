@@ -24,7 +24,7 @@ function loadSearch(){
 
     $.each(results, function(index, result){
       entry = window.searchData[result.ref]
-      $('#searchResults').append('<li><a href="' + entry.url + '">' + entry.title + '</a><br><p>' + entry.summary + '</p></li>')
+      $('#searchResults').append('<div><a href="' + entry.url + '">' + entry.title + '</a><br><p>' + entry.summary + '</p></div>')
     })
   })
 }
