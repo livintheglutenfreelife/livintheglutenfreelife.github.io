@@ -1,0 +1,15 @@
+.bottom-footer {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-color: #5CB2CE;
+}
+
+.copyright{
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
