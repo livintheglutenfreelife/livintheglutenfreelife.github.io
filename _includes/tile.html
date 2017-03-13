@@ -25,7 +25,7 @@
     {% endif %}
 
     <div class="inner-guts">
-        <div class="excerpt">{{ post.content | strip_html | truncatewords:75 }}</div>
+        <div class="excerpt">{{ post.content | strip_html | truncatewords:50 }}</div>
         <a href="{{ post.url | prepend: site.baseurl }}" class="read-more btn btn-info btn-lg">Read More <i class="fa fa-angle-right"></i></a>
         {% if post.categories != empty %}
         <div class="tags">

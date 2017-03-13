@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
 	<link rel="stylesheet" href="/css/site.css">
-	<link rel="stylesheet" href="/css/tile.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/js/getPageView.js"></script>
 	<script src="/js/site.js"></script>
 	<title>My Blog</title>
 </head>
 <body>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1725337847757626";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 	<header>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -26,71 +36,18 @@
   </li>
 </ul>
 	</header>
-	<br>
-	<br>
 	<div class="container">
-		
-			<script src="/js/tile.js"></script>
-
-<div class="tile">
-        <h2><a href="/buttermilk-biscuits/">Buttermilk Biscuits</a></h2>
-        <aside>
-            March 12, 2017
-            
-        </aside>
-
-    
-    <div class="preview-area">
-        
-
-        
-        <iframe class="preview-video" src="https://www.youtube.com/embed/bnjyroWM_dc" frameborder="0" allowfullscreen style="margin-left: 12.5%;"></iframe>
-        
-    </div>
-    
-
-    <div class="inner-guts">
-        <div class="excerpt">Buttermilk biscuits are a staple of southern cooking. Unfortunately, when it comes to making gluten-free biscuits, it can be quite difficult to get it right. Not anymore! This recipe has been approved by southerners and some say they can’t even tell the difference between this and a normal biscuit. Ingredient...</div>
-        <a href="/buttermilk-biscuits/" class="read-more btn btn-info btn-lg">Read More <i class="fa fa-angle-right"></i></a>
-        
-    </div>
-</div>
-		
-			<script src="/js/tile.js"></script>
-
-<div class="tile">
-        <h2><a href="/introduction/">Introduction</a></h2>
-        <aside>
-            March 11, 2017
-            
-        </aside>
-
-    
-
-    <div class="inner-guts">
-        <div class="excerpt">We are the Porter family. My wife Brittany has celiac disease and we have been living a gluten-free lifestyle for the past three years. When it comes to gluten-free food, taste doesn’t take center stage and it is often expensive. We’re on a journey to find and share recipes, flours,...</div>
-        <a href="/introduction/" class="read-more btn btn-info btn-lg">Read More <i class="fa fa-angle-right"></i></a>
-        
-    </div>
-</div>
-		
-
-		<nav class="pagination-wrap">
-    <ul class="pagination">
-        <li>More posts</li>
-        
-
-        
-            
-            <li class="active">
-                <a href="#">1</a>
-            </li>
-            
-        
-
-        
-    </ul>
-</nav>
+		<article>
+			<h1><a class="post-title" href="/introduction/">Introduction</a></h1>
+			<p>11 Mar 2017</p>
+			<p id=viewCount></p>
+			<p><p>We are the Porter family. My wife Brittany has celiac disease and we have been living a gluten-free lifestyle for the past three years. When it comes to gluten-free food, taste doesn’t take center stage and it is often expensive. We’re on a journey to find and share recipes, flours, and mixes that don’t compromise on flavor or texture.</p>
+</p>
+		</article>
+		<br><br>
+		<div class="fb-comments" data-href="https://livintheglutenfreelife.github.io/introduction/" data-width="50%" data-numposts="5">
+		</div>
+		<script>loadViews("/introduction/");</script>
 	</div>
 	<div class="sidebar">
     <ul>
