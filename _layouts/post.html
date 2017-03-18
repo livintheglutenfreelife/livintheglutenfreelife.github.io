@@ -7,9 +7,9 @@
 	<meta content="{{ page.title }}" property="og:title">
 	<meta content="{{ page.description }}" property="og:description">
 	{% if page.featured_image %}
-		<meta content="{{ page.featured_image }}" property="og:image">
+		<meta content="{{ site.url }}/{{ page.featured_image }}" property="og:image">
 	{% else %}
-		<meta content = "/images/lgfl_square_logo.png" property="og:image">
+		<meta content = "{{ site.url }}/images/lgfl_square_logo.png" property="og:image">
 	{% endif %}
 
 
