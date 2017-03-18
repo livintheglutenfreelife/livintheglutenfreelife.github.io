@@ -2,6 +2,7 @@
 layout: post
 title: "Buttermilk Biscuits"
 featured_video_id: "bnjyroWM_dc"
+description: "The best gluten-free buttermilk biscuits you will ever taste"
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bnjyroWM_dc?ecver=1" frameborder="0" allowfullscreen></iframe>
 Buttermilk biscuits are a staple of southern cooking. Unfortunately, when it comes to making gluten-free biscuits, it can be quite difficult to get it right. Not anymore! This recipe has been approved by southerners and some say they can't even tell the difference between this and a normal biscuit.

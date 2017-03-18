@@ -2,5 +2,5 @@ port:  4000
 encoding: utf-8
 include: ["_pages"]
 permalink: /:title/
-gems: [jekyll-paginate]
+gems: ['jekyll-paginate', 'jekyll-seo-tag']
 paginate: 5

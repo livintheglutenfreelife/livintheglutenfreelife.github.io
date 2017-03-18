@@ -9,6 +9,7 @@
 	<script src="/js/getPageView.js"></script>
 	<script src="/js/site.js"></script>
 	<title>My Blog</title>
+	{% seo %}
 </head>
 <body>
 
@@ -27,7 +28,7 @@
 	</header>
 	<div class="container">
 		<article>
-			<h1><a class="post-title" href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a></h1>
+			<h1><a class="post_title" href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a></h1>
 			<p>{{ page.date | date_to_string }}</p>
 			<p id=viewCount></p>
 			<p>{{ content }}</p>
