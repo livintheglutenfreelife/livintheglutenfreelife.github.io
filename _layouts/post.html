@@ -4,6 +4,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta content="{{ page.title }}" property="og:title">
+	<meta content="{{ page.description }}" property="og:description">
+	{% if page.featured_image %}
+		<meta content="{{ page.featured_image }}" property="og:image">
+	{% else %}
+		<meta content = "/images/lgfl_square_logo.png" property="og:image">
+	{% endif %}
+
+
 	<link rel="stylesheet" href="/css/site.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="/js/getPageView.js"></script>
