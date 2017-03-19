@@ -8,6 +8,11 @@ html, body {
 	color: #078FBC;
 }
 
+.post_info {
+	font-style: italic;
+	margin: 8px;
+}
+
 a:link {
     text-decoration: none;
 }

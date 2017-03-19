@@ -38,8 +38,8 @@
 	<div class="container">
 		<article>
 			<h1><a class="post_title" href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a></h1>
-			<p>{{ page.date | date_to_string }}</p>
-			<p id=viewCount></p>
+			<span class="post_info">{{ page.date | date_to_string }}</span>
+			<span id=viewCount class="post_info"></span>
 			<p>{{ content }}</p>
 		</article>
 		<br><br>
