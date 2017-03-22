@@ -4,12 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta content="{{ page.title }}" property="og:title">
-	<meta content="{{ page.description }}" property="og:description">
+	<meta content="{{ page.title }}" property="og:title"/>
+	<meta content="{{ page.description }}" property="og:description"/>
+	<meta content="{{ site.base_url }}{{ page.url }}" property="og:url"/>
+	<meta content="website" property="og:type"/>
 	{% if page.featured_image %}
-		<meta content="{{ site.url }}/{{ page.featured_image }}" property="og:image">
+		<meta content="{{ site.url }}/{{ page.featured_image }}" property="og:image"/>
 	{% else %}
-		<meta content = "{{ site.url }}/images/lgfl_square_logo.png" property="og:image">
+		<meta content = "{{ site.url }}/images/lgfl_square_logo.png" property="og:image"/>
 	{% endif %}
 
 
@@ -41,6 +43,10 @@
 			<span class="post_info">{{ page.date | date_to_string }}</span>
 			<span id=viewCount class="post_info"></span>
 			<p>{{ content }}</p>
+			<div class="fb-share-button" 
+    data-href="{{ site.base_url }}{{ page.url }}" 
+    data-layout="button_count">
+  			</div>
 		</article>
 		<br><br>
 		<div class="fb-comments" data-href="https://livintheglutenfreelife.github.io{{ page.url }}" data-width="50%" data-numposts="5">
