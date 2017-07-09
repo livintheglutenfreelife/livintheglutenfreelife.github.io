@@ -34,6 +34,7 @@ ul.topnav li a {
 /* Change background color of links on hover */
 ul.topnav li a:hover {
     background-color: #078FBC;
+    font-size: 19px;
     /*color:#BAC4C5;*/
     }
 
